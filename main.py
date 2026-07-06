@@ -1,5 +1,5 @@
 import pygame
-from logger import log_state
+from logger import log_state,log_event
 from constants import SCREEN_WIDTH,SCREEN_HEIGHT
 from player import Player
 from asteroid import Asteroid
@@ -21,7 +21,7 @@ def main():
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     asteroid_field = AsteroidField()
-    
+
     while True:
         log_state()
         for event in pygame.event.get():
