@@ -37,6 +37,6 @@ with an external library (Pygame).
 ### Run the Game
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-python main.py
+git clone https://github.com/pabi9625/Asteroids
+cd Asteroids
+uv run main.py
